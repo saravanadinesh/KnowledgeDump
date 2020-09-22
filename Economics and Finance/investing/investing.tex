@@ -1,0 +1,25 @@
+\chapter{Investing}
+\section{Technical Analysis}
+Technical analysis involves looking at a stocks movements in the stock market and basing investment decisions solely on them. Technical analysts assume that risk and return go hand-in-hand. 
+
+Return is simply the money one would obtain while selling a stock s/he owns. Although return could also involve dividends, in practice, technical analysts look for short term returns which, most of the time, involves only money earned from selling stocks rather than dividends. When the term ``Returns'' is used quantitatively in technical analysis circles, it means annual return\footnote{I still don\'t know if it means annualized returns}. 
+
+Risk has no official definition. It makes sense to think of it as the probability of losing certain amount of the invested money. One could draw a probability distribution curve of possible amounts of profit in the x-axis and their probabilities in the y-axis. In such a probability distribution, risk would be the area under the distribution to the left of 0 in the x-axis\footnote{assuming that the distribution was drawn after making inflationary adjustments}. One could also pick any negative x-axis value and term the area under the distribution beyond that value as the risk of losing more than that value. Note that, in this context, volatility of a stock would correspond to the variance of the distribution - the higher the variance, the higher the volatility. 
+
+Technical analysts use the following measures of risk/return to make their decisions
+	\begin{itemize}
+	\item \textbf{Alpha} is the excess return of investment (RoI) of the fund relative to the RoI of the benchmark index of that investment category. Alpha is a measure of returns.
+	\item \textbf{Beta} is the volatility of the fund relative to the market as a whole. Beta is a measure of risk.
+		\begin{itemize}
+		\item $\beta = \frac{covariance(f, b)}{variance(f)} $
+		\item $\beta = correlation(f, b) * \frac{\sigma(f)}{\sigma(b)} $
+		\end{itemize}
+	\item \textbf{R-squared} is the cross-correlation coefficient between the benchmark index and a fund. It represents the percentage of a fund portfolio\'s or security\'s movements that can be explained by movements in a benchmark index. The higher the R-squared value, the tighter the correlation and higher the likelihood of it following market movements (for that fund category)
+In other words,
+	$$R^2 = correlation(f,b)$$
+	\item \textbf{Standard Deviation}, $\sigma(f)$ is the standard deviation of the fund returns from its mean
+	\item \textbf{Sharpe ratio} 
+	$$ Sharpe\: Ratio = \frac{Return\: of\: the\: fund - Risk\: free\: return}{\sigma(f)}$$\footnote{``Risk free return'' in the U.S. context means U.S. treasury bond returns}\footnote{It is not clear whether ``return'' here means annual return or annualized return}
+	\end{itemize}
+
+Alpha can be seen as a measure of the fund manager\'s performance. High alpha and lower Beta together make a fund better than others. Alpha and Beta need to seen in the context of R-squared. If R-squared, i.e., correlation between the fund and the index, is week, then there is no point in looking at alpha and beta. On the other hand, If R-squared is strong (high), it may mean that the fund manager simply managed the fund such a way that it followed the index. This is useless as we can also do this simple management - Why pay a fee to the manager to make the fund perform as good as the market?

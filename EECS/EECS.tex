@@ -1,0 +1,54 @@
+% ----------------------------------------------------------------------------------------
+% This vast document is a dump of all the knowledge I have gathered over the 
+% years working in the industry
+% ----------------------------------------------------------------------------------------
+
+% Define the class of LaTeX documents to use for this article.
+\documentclass[a4paper, 11pt, oneside]{memoir}
+
+% Load all the preferences
+\usepackage{dineshStyle}
+
+% Select parts to process
+%\includeonly{partNW/partNW}
+
+% -------------------- Title info -------------------------------------------------------
+\newcommand\TitleBackgroundPic{%
+\put(0,0){%
+\parbox[b][\paperheight]{\paperwidth}{%
+\vfill
+\centering
+\includegraphics[width=\paperwidth,height=\paperheight]{titlebackground.png} % We won't use this for now
+\vfill
+}}}
+
+\title{\titleFont Knowledge Dump\par}
+    
+\author{%
+    \color{HalfGray}Dinesh Thogulua \\
+    \texttt{dinesh.thogulua@gmail.com}\vspace{20pt} \\
+}
+%\title{\vspace{4\baselineskip}\themeMainColor\bfseries\rmfamily\LARGE\spacedallcaps{Knowledge Dump}}
+%\author{\rmfamily\color{HalfGray}\Large\emph{Dinesh Thogulua}}
+%\date{\vspace{-1em}}
+
+% --------------------- Actual document content --------------------------------------------
+\begin{document}
+
+%\AddToShipoutPicture*{\TitleBackgroundPic}  // No need for now
+\maketitle              % Actually makes the title using the values of \title and \author
+
+\newpage
+\tableofcontents*	% Makes the ToC
+\newpage           
+\listoffigures
+\newpage
+\listoftables     
+
+\pagestyle{subduedHeadings}
+
+\include{partSys/partSys}
+\include{partHW/partHW}
+\include{partSW/partSW}
+\include{partNW/partNW}
+\end{document}

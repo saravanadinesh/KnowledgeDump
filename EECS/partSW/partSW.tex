@@ -1,0 +1,73 @@
+% ----------------------------------------------------------------------------------------
+% This contains all the content under Part: Software
+% ---------------------------------------------------------------------------------------
+\part{Software}
+\chapter{Operating System Basics}
+Any OS is comprised of a kernel and some software services built on top of the kernel that give higher level functionalities to the user\marginnote{OS is kernel plus some software services built on top of the kernel}. For ex., In Linux based operating systems, Linux forms the Kernel and, on top of that, whole lot of GNU services are available, such as the bash shell. The kernel interacts with hardware, loads and schedules processes, does context switching etc. Theoretically the user can directly call the functions provided by the kernel. But it would be cumbersome and not straightforward. Software services like GNU tools provide more intuitive functions to the user and inside these functions call necessary kernel functions in necessary order to accomplish the user desired task. 
+
+There is no limit to know many such layers of abstraction can be built - An OS may have very high level software services, that then use lower level software services which eventually call kernel functions. In fact, modern OSs like Android, easily have 5 layers of software services built on top of the kernel. This is precisely what makes the term ``OS'' vague. While all the services running in the privileged mode in the CPU can be labeled as part of the Kernel, there is no such a clear definition for ``OS'' as it could have however many layers of software running in the non-privileged mode. Some people call the kernel as the operating system and call, what other people traditionally call, OSs as ``packages'' or other terms. 
+
+\chapter{GNU-Linux}
+The GNU project was envisioned to provide a lot of free software services for ``Unix like'' kernels - basically kernels that have function names (along with intended functionalities) the same as Unix function names.\marginnote{GNU can be used with any Unix-like kernel, not just Linux} This meant that no matter which kernel is used, the user can install and run GNU tools on top of that kernel as long as it is a ``Unix like'' kernel. Unix OS (kernel + software services) was expensive at that time and GNU founders wanted benefits of the computer revolution available to everyone, not just those who have the money to buy expensive OSs like Unix. GNU project initially focused on creating software services hoping that one day someone will write a free Unix-like kernel. When Linus Trovalds wrote the Linux kernel\footnote{written completely in C} and made it free, it perfectly fit into GNU's equations. The GNU-Linux combo meant that now users had an entire OS available to them for free \footnote{Free software and open source software are independent concepts. GNU is free as well as open source. But there are commercial open source tools as well. Open source is meant to allow users to examine the quality of the code they obtained free of cost or for a fee}. Though today there are other free Unix-like kernels available which can be used with GNU tools, Linux is still the most preferred kernel. 
+
+\section{Linux Distributions}
+While it is up to a user to choose what GNU tools to use on top of the Linux kernel, the choices of GNU tools are too many. Few users meticulously want to choose GNU tools to use for their display, audio, video, internet and other needs. Hence the idea of linux distributions (actually GNU-Linux distributions)  or ``distros'' was born - \marginnote{``Distros'' are packages containing select set of GNU tools and Linux kernel}a group of enthusiasts meticulously choose GNU tools to satisfy each one of user's conceivable requirements, test if the tools are interacting with the Linux kernel or with each other without issues and publish packages that contain all the (tested sw versions) of chosen GNU tools and the (tested version of) Linux kernel. Users can simply download these packages and can jump start using a computer right after installing the package, which are called ``distros''. Some examples of distros are Ubuntu, Red Hat and CentOS.
+
+Over the years, the idea of packages has undergone major evolutions. At some point, corporations, like Red Hat, made it a commercial venture to provide packages. The idea is that, the free packages put together by enthusiasts offer no guarantee in terms of performance, reliability etc., and big firms hence cannot use GNU-Linux as compared to, say, Windows OS, wherein Microsoft delivers the OS with some guarantees, and in case of failures, accepts some liabilities and provides continuous support. \marginnote{There are commercial and free distros} So companies like Red Hat make packages with rigorously tested GNU-Linux components and give certain guarantees so that GNU-Linux becomes an acceptable alternative to other OSs like Windows and Unix to big firms. Along the same lines, some companies started making commercial packages that had a similar, but slightly different rationale - their customer firms need packages that are focused on specific functionalities, like networking, because their products focus only on such services - ex., web servers. Such firms do not want the clutter of GNU tools unrelated to networking. Of course, like all other firms, additionally they want guarantees and liabilities accompanying the packages. An example of such a package is the SUSE Linux. 
+
+Adding to the free/not-free distro flavours mentioned in the above paragraphs, the companies providing commercial distros realized that workers of the customer firms may be unfamiliar with their packages. So they made free versions of their non-free packages with the idea of grooming common people who, in the future, will form the work force of their customer firms. So Red Hat provides Fedora, SUSE provides ``open SUSE'' etc., which are all free. \marginnote{There are hundreds of distros. Ubuntu is most popular.}While this is the scene with commercial firms, the enthusiasts have gone berserk - there are now many major distros (ex. Debian, Arch, Alpine etc.), minor variations of these distros (Ubuntu, Tiny etc.) to subtler variations such as (Kubuntu, Mint etc.) and so on and on. There are/have been hundreds of distros. But many either have a very small following are dead in the water. As of when this was written, Ubuntu is, by a wide margin, the most preferred free package - but this may change in the future.
+
+\section{Miscellaneous}
+\subsection{Kernal Prints}
+The components of a Linux kernel, namely system calls, device drivers etc., output many ``kernel prints'' - these are basically \emph{printk} statements, which are the kernel equivalent of \emph{printf} statements. These prints go into the kernel log ring buffer. This buffer is then processed by syslog daemon for user visibility. One can use the command \emph{dmesg} to directly parse the log ring buffer and display all the kernel prints. These prints are very useful while debugging if anything is not working in Linux.
+
+
+\chapter{Linux Device Drivers}
+\marginnote{Drivers abstract out hw registers, expose meaningful functions}Linux device drivers, as with device drivers of any OS, are abstraction layers built over hardware devices' register configuration interface. Device drivers are part of the kernel and hence run in a privileged mode called the ``kernel mode''. All the software outside the kernel (part of the OS or applications) run in a less privileged mode called the ``user mode''. User mode programs call device drivers functions, which then configure the registers of the hardware device in question\marginnote{Driver runs in ``kernel mode'', while SW above the kernel run in a less privileged ``user mode''}. 
+
+Sometimes, some device drivers themselves call other device drivers - suppose we have a mouse connected to the computer with a USB cable. Here the ``peripheral driver'', that is meant to interface with the mouse, will have to use the usb controller driver in order to be able to write into the mouse device's hardware registers. In fact, we can extrapolate it to one more step - if our USB controller was sitting at the periphery of a motherboard, perhaps a PCIe bus is used to throw signals all the way from the CPU to the USB controller. In this case, the USB controller driver itself has to invoke the PCIe driver in order to be able to read/write into the controller's hardware registers. All in all, there is no way to say how many layers of drivers are there in the control chain from the user mode program to the hardware registers of a device - but the crux is that any device driver needs to carry out register writes to its device - that may involve a direct CPU write using an internal bus (AXI/APB etc.) or the write may have to go through complex paths involving other drivers. 
+
+Linux device drivers have a special quality that made linux a more attractive choice than windows OS for web server applications - unlike in Windows, device drivers in linux can be loaded and unloaded on the flly without requiring a reboot\marginnote{Linux drivers can be loaded/unloaded without reboot}. Since restarting a server would mean taking down the connections of possibly a few hundred clients, linux automatically became attractive. 
+
+Linux device drivers have three types of ``verticals'' namely, 
+	\begin{itemize}
+	\item Character drivers - for mouse, webcam, keyboard etc.
+	\item Block drivers - for storage devices
+	\item Packet drivers - for networking
+	\end{itemize}
+	
+And each of these verticals have their associated ``horizontals''. For instance, the packet driver vertical has WiFi driver, ethernet driver etc. as its ``horizontals''. Block drivers maintain the file protocol stack (FAT32, EXT4 etc.,) and have device specific horizontals like magnetic disk drivers, SD card drivers etc. Character drivers are used for pretty much every device that hasn't anything to do with networking or storage. One can imagine its horizontals. In fact, the horizontals are too many that character drivers are usually subdivided into tty drivers, sound drivers, console drivers and more. 
+
+\section{Framework}
+Device driver framework defines how user mode programs actually go about using the services provided by the drivers. In Linux, the user mode programs perform file operations on ``device files'' and a kernel daemon called ``Virtual File System'' or VFS converts these file read/write operations into function calls to driver functions\footnote{While other methods of interacting with drivers exist, for pedagogical reasons we will focus on this method}. Drivers are written like normal dynamically loaded C programs. But instead of being built as a .so shared object\footnote{`so' files is the linux equivalent of windows dll files}, they are built as .ko objects, with `k' standing for `Kernel space'. This .ko file is referred to as ``module''. Once the module is available, the following commands could be used with it:
+
+	\begin{lstlisting}[language = C]
+	lsmod 	/* Lists currently loaded modules */
+	insmod moduleName.ko /* Loads a module */
+	modprobe moduleName.ko /* Loads a module and its dependencies */
+	rmmod moduleName.ko /* Unloads a module */
+	\end{lstlisting}
+
+Inside the driver code, there are special functions that run when the above module operations are performed on them - \emph{insmod} invokes \emph{module\_init()} and \emph{rmmod} invokes \emph{module\_exit()}. \emph{module\_int()} sets the ``major number''and ``minor number''\footnote{minor number is like a version no. of the driver} of the driver. Alternatively the initialization function can request the kernel to assign these numbers to the driver\footnote{For some reason, this is considered to be safer}. Once a driver is loaded, we need to create a corresponding device file to interact with it. The command used for this is:
+	\begin{lstlisting}[language = C]
+  	mknod deviceFileName typeValue majorNo minorNo
+  	
+  	/* Example */
+  	mknod mydevfile c 60 0 
+  	\end{lstlisting}
+
+Here the typeValue tells the kernel whether the driver is a Character or Block or Packet driver. Once this is done, user mode programs can use this device file to interact with the driver just loaded.
+
+\section{Miscellaneous}
+\subsection{A Bare Minimum Driver}
+The following code shows a driver that simply outputs some kernel prints when loaded and unloaded.
+	\lstinputlisting[language = C, caption = A Bare Minimum Driver, label = bareMinDriver]{partSW/bareMinDriver.c}
+The above code was part of a \href{http://opensourceforu.efytimes.com/2010/11/understanding-linux-device-drivers/}{Linux Drivers Tutorial}. It guides the reader step-by-step towards writing simple, and, later on, complex drivers.
+
+\subsection{Kernel Library Functions}
+Since the driver runs on kernel space, it cannot use user space libraries \footnote{available in /usr/src/include}. This means that, unless the Linux kernel source code is available, one cannot compile a driver code. In Ubuntu, one can use \emph{apt-get install linux-source} to get the source code\footnote{The source code goes to /usr/source/linux}.
+
+
+
+
+
