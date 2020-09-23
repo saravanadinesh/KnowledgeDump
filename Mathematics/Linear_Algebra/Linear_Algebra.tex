@@ -380,6 +380,7 @@ There are three advantages of using \(\mathbf{x} = R^{-1}\mathbf{p}\) over \(\ma
 	\begin{enumerate}
 	\item \(R\) is always a matrix whether or not \(A\) is a matrix (Recall the note about how a vector need not a tuple of scalars...how a function or a polynomial can be a vector)
 	\item When it comes to finding a solution for overdetermined system of equations where no solutions exist, the former method can be used with some tricks. We explain this in the next section.
+	\item Because \(R\) is hermitian symmetric, it is easier to invert than \(A\) that, in general, has no structure.    
 	\end{enumerate}
 Before we move on, we make a note about the relationship between these two equivalent solutions. One can easily see that \(R\) is nothing but \(A^H A\), and \(\mathbf{p}\) is nothing but \(A^H \mathbf{y}\). So one can rewrite \(\mathbf{x} = R^{-1}\mathbf{p}\) as:
 	\[ \mathbf{x} = (A^H A)^{-1} A^H \mathbf{y} \]
@@ -427,9 +428,11 @@ This is called the \textbf{least squares solution}. Compare this equation to \(\
 This is called the \textbf{least squares approximation} of \ivec{y} in the vector space spanned by \ivec{a_i}. And the matrix \( P = A(A^H A)^{-1} A^H \) is called the \textbf{projection matrix} as it ``projects'' \ivec{y} into the column vector space of \(A\). 
 
 \subsection{Choosing a basis function}
-We know the duality of \(A\mathbf{x} = \mathbf{y}\) as both a system of linear equations, as well a way of representing \ivec{y} as a linear combination of \ivec{a_i} which for a basis for the vector space in which \ivec{y} lives. In this section, we explore more about the latter idea: If we are given a vectors space \(S\) and we want to select a Hamel basis, how do we pick one among several possibilities? One way of answering this lies in the Grammian matrix. We observe that, if we choose the \ivec{a_i} such that they are all orthogonal to one another and they are unit vectors, then the Grammian matrix reduces to an identity matrix!! And hence solving \(R\mathbf{x} = \mathbf{p}\) becomes trivial - We simply get:
+In the earlier section we talked about representing vectors in given vectors space \(S\) as a linear combination of a set of vectors forming a basis, and how a Hamel basis is smallest such a basis that can span \(S\). But we did not talk about how to pick one Hamel basis among several Hamel bases? We are now eqipped to answer that question. One meaningful way is to choose a Hamel basis that makes finding coefficients of the linear combination easy for a given vector \ivec{y}. Since this involves nothing but solving \(A\mathbf{x} = \mathbf{y}\), where the column vectors \ivec{a_i} of \(A\) are the vectors that form the basis, and \ivec{x} the set of coefficients. We now know that finding \ivec{x} involves inverting \(A\) or inverting the Grammian \(R\). Inverting matrices is generally painful. We can make it easy or completely avoid it by cleverly choosing a Hamel basis. We observe from the Grammian matrix that, if we choose the \ivec{a_i} such that they are all orthogonal to one another and they are unit vectors, then the Grammian matrix reduces to an identity matrix!! And hence solving \(R\mathbf{x} = \mathbf{p}\) becomes trivial - We simply get:
 	\[ x_i = \inpb{y}{a_i} \]
+Such \ivec{a_i} are said to be \textbf{orthonormal}. Generally inverting matrices is painful, but it is increasingly so when the number of vectors in the basis become very large - or even infinite. In such cases, choosing orthonormal vectors is pretty much the only choice. There is a process called the \textbf{Gram-Schmidt orthogonalization} by which one can start with any basis and manipulate the vectors in it to come with an alternative basis that has orthonormal vectors. 
 
+\subsection{Least squares approximation and fitting noisy data}
 
 
 
