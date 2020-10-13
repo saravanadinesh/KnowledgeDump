@@ -43,7 +43,40 @@ Note that, for a Normal distribution, Mean = Median = Mode, and Skewness is $0$,
 
 Figure \ref{fig:kurtosis} shows what positive and negetive (Adjusted Peason) Kurtosis looks like when compared with the normal distribution.  
 
-So far, we have talked about parameters related to univariate distributions, where one random variable $X$ has a certain probability distribution associated with it. But sometimes a probability distribution is associated with a set of two random variables. Ex: We can associate probabilities to (height, weight) tuples for all the girls of a certain age. For such cases, some new parameters arise. \textbf{Covariance} ($\sigma_{XY}$), defined as \( Cov[X,Y] = E[(X-\mu_X)(Y-\mu_Y)] \). The usefulness of Covariance is apparent when you look at its normalized variant, namely the \textbf{Correlation Coefficient} ($\rho$), defined as \( \rho_{XY} = \frac{\sigma_{XY}}{\sigma_X \sigma_Y}\). The values of the Correlation Coefficient can vary from -1 to 1. When $X$ and $Y$ are independent, $\sigma_{XY}$ will be 0 and hence $\rho_{XY}$ will also be 0. If $Y$ is linearly dependent on $X$, then $\rho_{XY}$ will be 1 or -1. If $Y$ is loosely dependent on $X$, then $\rho$ values will be close to zero (on the positive or negative side). 
+So far, we have talked about parameters related to univariate distributions, where one random variable $X$ has a certain probability distribution associated with it. But sometimes a probability distribution is associated with a set of two random variables. Ex: We can associate probabilities to (height, weight) tuples for all the girls of a certain age. Two random variables $X$ and $Y$ are said to be \textbf{independent} if:
+	\[ P(A|B) = P(A)\ or,\ equivalently,\ P(B|A) = P(B) \]
+A direct consequence of this equality is that, we can use chain rule to show that, when two random variables are independent, their joint probability is equal to the multiplication of their individual probabilities:
+ 	\[ P(A \cap B) = P(B|A)P(A) = P(B)P(A) \]
+It is easy to show that, for continuous random variables, independence implies:
+	\[ f_{X,Y}(x,y) = f_X(x)f_Y(y) \]
+
+\textbf{Covariance} and its normalized version, \textbf{correlation coefficient}, are measures of association between two random variable.  \textbf{Covariance} ($\sigma_{XY}$), defined as:
+	\[ Cov[X,Y] = E[(X-\mu_X)(Y-\mu_Y)] = E[XY] - E[X]E[Y]\] 
+Let us look at Covariance for the some scenarios:
+	\begin{itemize}
+	\item If X, Y are independent, then \( Cov(X,Y) = 0 \). This is because, when X, Y are indendent, \( E[XY] = E[X]E[Y] \)
+	\item If Y is linearly related to X, i.e., \( Y = aX+b \), where a, b are some constants, then 
+		\begin{itemize}
+		\item \( \mu_Y = a\mu_X + b \)
+		\item \( \sigma^2_Y = a^2 \sigma^2_X \)
+		\item \( \sigma_Y = |a|\sigma_X \). The modulus function is important here to derive the next point
+		\item \( Cov(X,Y) = \sigma_X \sigma_Y\ \text{if a>0, or } Cov(X,Y) = -\sigma_X \sigma_Y\ \text{if a<0} \)
+		\end{itemize}
+	\end{itemize}
+
+When two random variables $X$ and $Y$ are added together, the resulting random variable's Variance is:
+	\[ Var(X+Y) = Var(X) + Var(Y) + 2Cov(X,Y) \]
+Let us look at this Variance following interesting scenarios:
+	\begin{itemize}
+	\item if X,Y are independent, then \( Var(X+Y) = Var(X) + Var(Y) \)
+	\item  If Y is linearly related to X, i.e., \( Y = aX+b \), where a, b are some constants, then,
+		\[ \sigma_{X+Y} = \sigma_X + \sigma_Y,\ text(if a>0) \]
+		\[ \sigma_{X+Y} = \sigma_X - \sigma_Y,\ text(if a<0) \]
+	\end{itemize}
+	
+\textbf{Correlation coefficient} for two random variables is defined as:
+	\[ \rho_{XY} = \frac{\sigma_{XY}}{\sigma_X \sigma_Y} \]
+The values of the Correlation Coefficient can vary from -1 to 1. When $X$ and $Y$ are independent, $\rho_{XY}$ will also be 0. If $Y$ is linearly dependent on $X$, then $\rho_{XY}$ will be 1 or -1. If $Y$ is loosely dependent on $X$, then $\rho$ values will be close to zero (on the positive or negative side). 
 	\begin{figure}
 	  \centering
 	    \includegraphics[width=\textwidth]{Statistics/correlation}

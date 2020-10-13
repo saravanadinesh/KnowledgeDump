@@ -1,4 +1,63 @@
-\chapter{Financing}
+\chapter{Finance}
+\section{Risk vs. Return}
+Why would anyone invest money instead of keeping the money at home in a safe? it is because we want to grow our money. Why do we want to grow our money? There is a need and greed to do so - The need is that, inflation will render our money less valuable in the future. So we have to grow our money at least as much as inflation devalues our money. The greed is self explanatory. In this section, our entire focus will be on how much growth one expects from an investment - We will start with the simplest of markets, where there is only one security in which we can invest, and introduce more and more securities to see how our decision would change in each case.
+
+\subsection{Single riskfree bond}
+Suppose the market only has one security - it is a riskless government bond, which offers \(\$1\) after one year. How much should we pay for this bond? Suppose inflation rate is 2\% yearly. Then it makes sense that, at a minimum, if we stick \(\$x\) into \(\$x*(1.02)\). The reason is, if it doesn't pay at least this much, we would just buy all the non-perishable items in the CPI basket with \(\$x\) and keep it home and sell them after 1 year and make \(\$x*(1.02)\). So if the bond face value is \(\$1\), then we cannot pay more than \(\frac{\$1}{1.02} = 0.9803*\$1 = \$0.9803\). The multiplicative factor \(0.9803\) in the above calculation is called the \textbf{discount factor} - It is the factor by which we discount a future dollar. One can think of it as a way of converting a future dollar into today's dollar (just like we would use a conversion factor to go between two different currencies). If we want to converse in terms of the denominator, the value in excess of 1 is called the \textbf{rate of return} or simply \textbf{return} - i.e., \[r = \frac{\$1}{\$0.9803} - 1 = \frac{\$1 - \$0.9803}{\$0.9803}\]. So the return is essentially profit divided by invested amount\footnote{We are assuming that there won't be any tax on the profit. This isn't necessarily true. But for pedagogical reasons, we will assume that there is no tax in any investment. Also we are assuming that there won't be any warehousing cost if we want to buy instead a basket of CPI goods and store them. If this is not true, the returns we demand from a riskfree bond may be even lower than the inflation rate}. 
+
+U.S. treasury bonds, considered riskfree typically trade at a few basis points above the inflation.  
+
+\subsection{One risk-free bond and one risky bond}
+Now, let us say that we have a choice between a riskfree government bond and a corporate bond that is risky - risky in that, there is a chance of default. Let us say that on a \(\$1\) investment in this bond, there is a 50\% chance of default where we get \(\$0\) in return after one year and a 50\% chance that we will get \(\$2x\). This means the expected value of this investment is \(0.5*\$0 + 0.5*\$2x = \$x\). The question is what should be the value of \(\$x\) that will make us invest in the corporate bond instead of the riskfree government bond? Since \(\$1\) invested in a government bond will give us \(\$1.02\), \(\$x\) must be greater than \(\$1.02\). How much greater? The answer is entirely a personal choice - And hence it will vary from one person to another. Let us call the return from this risky bond as\(R_i = \frac{\$x}{\$1} - 1\). Suppose we call the risk free return of the government bond, \(r_f\), we have:
+	\[ E[R_i] = r_f + risk\ premium \]
+where, the risk premium is the excess return on top of riskless return that we need in order to invest in the corporate bond
+
+In the wake of that question, we can make the following additional observations:
+	\begin{itemize}
+	\item The probabilty of default is a prediction. And the prediction may be right or wrong. So the risk premium must contain within it, an uncertainty premium - because there is any uncertainty involved at all as compared to a risk-free bond - and also a prediction premium because we are taking a risk in making a prediction of the probabilities. In other words, there is a probability that your probability estimates are wrong
+	\item Other people in the market may estimate the chances of default differently than us, besides the fact that they may want a demand a different risk premium than we do. 
+	\item The price of a security, whether or not it is risky, will depend entirely upon supply-demand. So the price may be higher than what we demand or lower. Even though the prices are fixed by the market, our decision to invest or not should depend only on our appetite for taking risks and the returns that we want. There isn't really such a thing as a ``fair price'' for a security. 
+	\item The predictions about chances of default can be made only with available data - i.e., present and past data. We cannot predict based on future data
+	\end{itemize}
+	
+So far we have considered government bonds to be risk free. But the truth is, the risk free return is a misnomer because it is just a rate the market collectively demanded as something greater than the rate of inflation - And the rate of inflation itself is a prediction (although very accurate). This is the reason why the price of government bonds (which is a function of only \(r_f\) as the cash flows are constants) varies from time to time. If it was truly risk free, that wouldn't be the case!
+
+\section{One risk-free bond and two risky bonds}
+Suppose we have two corporate bonds in the market, one - call it bond A - that gives \$2 or \$0 with a probability of 0.5 each and another - call it bond B - that gives \$1.5 or \$0.5 with a probability of 0.5 each. Both have a one year maturity period. The expected nominal value of both bonds at the end of the year is the same - \$1. But would we pay the same price for either of the two bonds? intuitively, it doesn't sound right to pay the same price to both bonds. However articulating this intuition is difficult with bernoulli R.V.s. We will instead explain it with normal R.V.s in the next section. For now, it feels like the price should be a function of the standard deviation and not just the mean nominal value of our investment at the end of the year - because standard deviation is the thing that is different between bond A and bond B: For bond A, it is \$1 and for bond B, it is \$0.25.
+
+Before we move on, it is worthwhile to note that, with bond A and bond B, although our demanded returns \(R_A\) and \(R_B\) are different from each other, both will differ only in their risk premiums - i.e., both are required to be higher than the risk-free return. Taking all of these into consideration, we could come up with the following equation:
+	\[ R_x = r_f + f(\mu_x, \sigma_x) + prediction\ premium(x) \]
+where f is a function that results in a unit less quantity.
+
+\section{Market with diversification possibilities}
+Suppose there are two corporate bonds, identically distributed such that each has terminal nominal value of \$1 if it succeeds and \$0 if it doesn't. If we buy two units of any one of the two bonds, then there is a 50\% chance that we will come up empty handed and 50\% chance that we will come with \$2. Instead, suppose we buy one of each bond and create a portfolio. What will be the terminal value of that portfolio? The following table shows all the possibilities:
+	\begin{table}[h]
+	\arrStr{1.3}
+	\begin{center}
+	\begin{tabular}{l l l}
+	\toprule
+	 & Bond B succeeds & Bond B fails\\
+	\midrule
+	Bond A succeeds & \$2 & \$1\\
+	Bond A fails & \$1 & \$0\\
+	\bottomrule
+	\end{tabular}
+	\end{center}
+	\caption{Nominal terminal value of our portfolio}
+	\end{table}
+
+We can obseve that, with diversification, we get a trade off between the upside and the downside - With the portfolio, we can see that, we have only a 25\% chance of coming up empty handed, as opposed to 50\% of the time in the single bond case. This did come at a price: The chance of getting a \$2 return is now only 25\%, whereas it was 50\% before. What we have done with the portfolio is that we have reduced the risk of coming up with nothing at the cost of reducing the chances of getting the highest possible return. 
+
+Note that the benefits of diversification is only available when the two bonds in question are independent of each other. But what if they are not independent? We look at the following possibilities:
+	\begin{itemize}
+	\item Both bonds are perfectly, positively, correlated: In this case, there is no difference between investing in a portfolio of two bonds or putting all your money in just one bond. The payoffs and their probabilities are identical
+	\item Both bonds are perfectly, negatively correlated: In this case, the payoff is certain! We will get \$1 in all possible scenarios. So the portfolio basically becomes equivalent to a risk-free bond! 
+	\end{itemize}
+
+In general, when two bonds are perfectly, negatively correlated to each other, if we put them together in the portfolio we get \( \sigma_P = \sigma_X - \sigma_Y \), where \( \sigma_P \) is the portfoilio standard deviation. So if \( \sigma_X = \sigma_Y \), then \( \sigma_P = 0\), which is what happened in our example case above and we ended up with a certain payoff. Even if  \( \sigma_X \neq \sigma_Y \), still, \( \sigma_P \) becomes small as long as X and Y are negatively correlated. Note that the expected payoff for a portfolio is, \( E[P] = E[X] + E[Y] \) no matter whether X,Y are correlated positively or negatively or completely independent. What this means is that, by putting together a portfolio of two negatively correlated bonds, our expected payoff will be the sum of their individual payoffs, but the uncertainty of the payoff could be drastically reduced - or sometimes even be 0. 
+
+Note that, once we put together two bonds into a portfolio, the portfolio itself can be thought of as a bond with a set of expected payoff structure and a certain standard deviation. One can thus add one more bond to this ``portfolio bond'' and create a new portfolio. If this new bond and the existing ``portfolio bond'' are negatively correlated, the new portfolio's standard deviation will be even lower than that of the old portfolio. 
+ 
 \section{Terminology}
 	\begin{itemize}
 	\item \textbf{Market Capitalization:} Outstanding stock * share price (of a company)
@@ -14,3 +73,6 @@ The sources of financing are, generically, capital self-generated by the firm (r
 	\item \textbf{Equity} \textit{from the company\'s PoV} is attractive because, it is not obliged to pay the equity owners, i.e., investors, money on time - Basically investors are the owners of the company and if the company is losing money, it is same as owners losing money. The downside is that, equity owners will now have a say in how the company should be run, where it should invest its retained earnings etc. If company sells 50\% of its stock to someone early on when the company was not doing well, that someone will continue to own half of the company indefinitely even if the company\'s earnings have drastically improved over the years.
 	\item \textbf{Equity} \textit{from the investor\'s PoV} is attractive because it usually has more returns than debt - this comes, of course, from the inherent risks involved. 
 	\end{itemize}	
+
+%% Unused
+%It is difficult to get to grips with a corporate bond that has a chance of default. Even if we predict the chances of default and the payouts when the firm succeeds or fails - even if we predict the expected return - there is a problem inherent to anything probabilistic: when we say ``there is a 50\% chance of getting a head if we flip this coin'', what we mean is, if we flip the coin infinite times - or at least a large number of times - the relative frequency of heads will be 0.5\footnote{All trials need to be independent for these arguments to be true}. With investments, what this means is that, if a corporate bond has a 50\% chance of default, you have to try this experiment of buying corporate bond every year for several years, then, after several years, we will look back and see that the relative frequency of success was indeed 50\%. But how many years of investment do we have in our hands before we retire or die? That is not a large number! We can solve this by using a different trick - The probability of the coin we mentioned doesn't have to be realized through flipping the same exact coin - we can conduct independent trials of many different coins, all of which have the same probability of success, and realize the probability of success in reality. In other words, we can invest in a portfolio of several corporate bonds, all independent - and for now - identically distributed, instead of investing in a single bond.
