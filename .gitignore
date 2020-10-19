@@ -44,6 +44,9 @@
 # latexrun
 latex.out/
 
+## Temp files
+.ipynb_checkpoints/
+
 ## Auxiliary and intermediate files from other packages:
 # algorithms
 *.alg

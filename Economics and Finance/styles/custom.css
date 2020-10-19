@@ -1,0 +1,25 @@
+<style>
+div.highlight_box {    
+    width: 75%;
+    margin: auto;
+    background-color: #ebd498;
+    border-color: #0a0a0a;
+    border-left: 5px solid #d6ac3a;
+    padding: 0.5em;
+    }   
+</style>
+<script>
+    MathJax.Hub.Config({
+                        TeX: {
+                           extensions: ["AMSmath.js"]
+                           },
+                tex2jax: {
+                    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                    displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+                },
+                displayAlign: 'center', // Change this to 'center' to center equations.
+                "HTML-CSS": {
+                    styles: {'.MathJax_Display': {"margin": 4}}
+                }
+        });
+</script>
