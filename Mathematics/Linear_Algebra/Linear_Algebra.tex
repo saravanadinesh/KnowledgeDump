@@ -330,13 +330,13 @@ An important implication of this geometric interpretation is that, if two vector
 We show two vectors \ivec{y} and \ivec{a}. One can imagine \ivec{a} being parallel to the ground (if you will). Now imagine the sun at 12`O' clock. It will create a shadow of \ivec{y} on \ivec{a}. Let us call the length of this shadow as \(x\). Now one can imagine a third vector \ivec{e} connecting the end of the shadow to the end of \ivec{y}. We can show that,
 	\begin{align*}
 	\mathbf{y} &= x\mathbf{a} + \mathbf{e} \\
-	\inpb{y}{a} &= x^2\inpb{a}{a} + \inpb{e}{a}
+	\inpb{y}{a} &= x\inpb{a}{a} + \inpb{e}{a}
 	\end{align*}
 	Now, using our previous understanding of inner product of two vectors orthogonal to each other being \(0\)
-	\[ \inpb{y}{a} = x^2\normb{a}^2 + 0 \]
+	\[ \inpb{y}{a} = x\normb{a}^2 + 0 \]
 	If \ivec{a} is a unit vector, then,
-	\[ \inpb{y}{a} = x^2 \] 
-In other words, if \ivec{a} is a unit vector, then the inner product \( \inpb{y}{a} \) is square of the length of the shadow of \ivec{y} falling on \ivec{a}.
+	\[ \inpb{y}{a} = x \] 
+In other words, if \ivec{a} is a unit vector, then the inner product \( \inpb{y}{a} \) is the length of the shadow of \ivec{y} falling on \ivec{a}.
 	
 Now, recall our linear system of equations, represented as 
 	\[  \mathbf{y} = x_1\mathbf{a_1} + x_2\mathbf{a_2} + \ldots + x_n\mathbf{a_n} \]
