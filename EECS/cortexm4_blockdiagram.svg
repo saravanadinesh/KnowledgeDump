@@ -1,0 +1,680 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="525.32" height="435.979" viewBox="0 0 393.989 326.984" xml:space="preserve" color-interpolation-filters="sRGB" class="st11" version="1.1">
+ <style type="text/css" xml:space="preserve"><![CDATA[
+	
+		.st1 {fill:#ffffff;stroke:#000000;stroke-linecap:butt;stroke-width:0.5px}
+		.st2 {fill:#000000;font-family:Arial,Helvetica,sans-serif;font-size:0.666664em}
+		.st3 {font-size:1em}
+		.st4 {fill:none;stroke:#000000;stroke-linecap:butt;stroke-width:0.5px}
+		.st5 {marker-end:url(#mrkr4-30);marker-start:url(#mrkr4-28);stroke:#000000;stroke-linecap:butt;stroke-width:0.5px}
+		.st6 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.21739130434783px}
+		.st7 {fill:none;stroke:none;stroke-linecap:butt;stroke-width:0.5px}
+		.st8 {marker-end:url(#mrkr4-30);stroke:#000000;stroke-linecap:butt;stroke-width:0.5px}
+		.st9 {stroke:#000000;stroke-linecap:butt;stroke-width:0.5px}
+		.st10 {marker-start:url(#mrkr4-28);stroke:#000000;stroke-linecap:butt;stroke-width:0.5px}
+		.st11 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}]]></style>
+ <defs xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" id="Markers">
+  <g id="lend4">
+   <path d="M 2 1 L -0 0 L 2 -1 L 2 1 " style="stroke:none" />
+  </g>
+  <marker id="mrkr4-28" class="st6" orient="auto" overflow="visible">
+   <use xlink:href="#lend4" transform="scale(4.6) " xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" />
+  </marker>
+  <marker id="mrkr4-30" class="st6" orient="auto" overflow="visible">
+   <use xlink:href="#lend4" transform="scale(-4.6,-4.6) " xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" />
+  </marker>
+ </defs>
+ <g xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/">
+  <title>Page-1</title>
+  <g id="shape1-1" transform="translate(10.8122,-196.091)">
+   <title>Sheet.1</title>
+   <desc>
+    ‡
+   </desc>
+   <rect x="0" y="270.291" width="56.6929" height="56.6929" class="st1" />
+   <text x="1" y="278.49" class="st2">
+    ‡ 
+   </text>
+  </g>
+  <g id="shape2-4" transform="translate(10.8122,-105.382)">
+   <title>Sheet.2</title>
+   <desc>
+    ‡
+   </desc>
+   <rect x="0" y="270.291" width="56.6929" height="56.6929" class="st1" />
+   <text x="1" y="278.49" class="st2">
+    ‡
+   </text>
+  </g>
+  <g id="shape3-7" transform="translate(90.1823,-252.783)">
+   <title>Sheet.3</title>
+   <desc>
+    Nested Vectored Interrupt Controller (NVIC)
+   </desc>
+   <rect x="0" y="270.291" width="56.6929" height="56.6929" class="st1" />
+   <text x="15.67" y="281.84" class="st2">
+    Nested 
+    <tspan x="12.34" dy="9.6" class="st3">
+     Vectored 
+    </tspan>
+    <tspan x="13.45" dy="9.6" class="st3">
+     Interrupt 
+    </tspan>
+    <tspan x="11.01" dy="9.6" class="st3">
+     Controller 
+    </tspan>
+    <tspan x="16.13" dy="9.6" class="st3">
+     (
+    </tspan>NVIC)
+   </text>
+  </g>
+  <g id="shape5-14" transform="translate(163.883,-252.783)">
+   <title>Sheet.5</title>
+   <rect x="0" y="270.291" width="68.0315" height="56.6929" class="st1" />
+  </g>
+  <g id="shape11-16" transform="translate(163.883,-105.382)">
+   <title>Sheet.11</title>
+   <desc>
+    Bus Matrix
+   </desc>
+   <rect x="0" y="270.291" width="56.6929" height="56.6929" class="st1" />
+   <text x="9.45" y="301.04" class="st2">
+    Bus Matrix
+   </text>
+  </g>
+  <g id="shape13-19" transform="translate(78.8437,-94.0433)">
+   <title>Sheet.13</title>
+   <desc>
+    Cortex-M4 processor
+   </desc>
+   <rect x="0" y="94.5433" width="238.11" height="232.441" class="st4" />
+   <text x="81.21" y="103.74" class="st2">
+    Cortex-M4 processor
+   </text>
+  </g>
+  <g id="shape14-22" transform="translate(231.915,-283.965)">
+   <title>Signal 3</title>
+   <path d="M4.24 326.98 L4.6 326.98 L97.45 326.98" class="st5" />
+  </g>
+  <g id="shape16-31" transform="translate(689.293,85.5394) rotate(90)">
+   <title>Signal 3.16</title>
+   <path d="M4.24 326.98 L4.6 326.98 L74.77 326.98" class="st5" />
+  </g>
+  <g id="shape17-38" transform="translate(689.293,221.602) rotate(90)">
+   <title>Signal 3.17</title>
+   <path d="M4.24 326.98 L4.6 326.98 L18.53 326.98" class="st5" />
+  </g>
+  <g id="shape18-45" transform="translate(331.127,-60.0276)">
+   <title>Sheet.18</title>
+   <desc>
+    Trace Port Interface
+   </desc>
+   <rect x="0" y="304.307" width="62.3622" height="22.6772" class="st7" />
+   <text x="12.51" y="313.25" class="st2">
+    Trace Port 
+    <tspan x="15.62" dy="9.6" class="st3">
+     Interface
+    </tspan>
+   </text>
+  </g>
+  <g id="shape19-49" transform="translate(305.615,-133.728)">
+   <title>Signal 3.19</title>
+   <path d="M4.24 326.98 L4.6 326.98 L23.75 326.98" class="st5" />
+  </g>
+  <g id="shape21-56" transform="translate(146.875,-136.563)">
+   <title>Signal 3.21</title>
+   <path d="M4.24 326.98 L4.6 326.98 L12.41 326.98" class="st5" />
+  </g>
+  <g id="shape22-63" transform="translate(146.875,-207.429)">
+   <title>Signal 3.22</title>
+   <path d="M4.24 326.98 L4.6 326.98 L12.41 326.98" class="st5" />
+  </g>
+  <g id="shape23-70" transform="translate(146.875,-281.13)">
+   <title>Signal 3.23</title>
+   <path d="M4.24 326.98 L4.6 326.98 L12.41 326.98" class="st5" />
+  </g>
+  <g id="shape24-77" transform="translate(220.576,-207.429)">
+   <title>Signal 3.24</title>
+   <path d="M4.24 326.98 L4.6 326.98 L12.41 326.98" class="st5" />
+  </g>
+  <g id="shape25-84" transform="translate(220.576,-133.728)">
+   <title>Signal 3.25</title>
+   <path d="M4.24 326.98 L4.6 326.98 L12.41 326.98" class="st5" />
+  </g>
+  <g id="shape26-91" transform="translate(-134.755,164.909) rotate(-90)">
+   <title>Signal 3.26</title>
+   <path d="M4.24 326.98 L4.6 326.98 L12.41 326.98" class="st5" />
+  </g>
+  <g id="shape27-98" transform="translate(-146.093,91.2087) rotate(-90)">
+   <title>Signal 3.27</title>
+   <path d="M4.24 326.98 L4.6 326.98 L12.41 326.98" class="st5" />
+  </g>
+  <g id="shape28-105" transform="translate(-120.581,91.2087) rotate(-90)">
+   <title>Signal 3.28</title>
+   <path d="M4.24 326.98 L4.6 326.98 L12.41 326.98" class="st5" />
+  </g>
+  <g id="shape29-112" transform="translate(-208.455,156.406) rotate(-90)">
+   <title>Signal 2</title>
+   <path d="M0 326.98 L3.9 326.98" class="st8" />
+  </g>
+  <g id="shape30-117" transform="translate(84.513,-170.579)">
+   <title>Sheet.30</title>
+   <path d="M0 326.98 L96.38 326.98" class="st9" />
+  </g>
+  <g id="shape31-120" transform="translate(445.513,74.2008) rotate(90)">
+   <title>Signal 1</title>
+   <path d="M4.24 326.98 L4.6 326.98 L8.5 326.98" class="st10" />
+  </g>
+  <g id="shape32-125" transform="translate(-146.093,164.909) rotate(-90)">
+   <title>Signal 1.32</title>
+   <path d="M4.24 326.98 L4.6 326.98 L8.5 326.98" class="st10" />
+  </g>
+  <g id="shape33-130" transform="translate(-242.471,156.406) rotate(-90)">
+   <title>Sheet.33</title>
+   <path d="M0 326.98 L73.7 326.98" class="st9" />
+  </g>
+  <g id="shape34-133" transform="translate(118.529,409.689) rotate(180)">
+   <title>Sheet.34</title>
+   <path d="M0 326.98 L34.02 326.98" class="st9" />
+  </g>
+  <g id="shape35-136" transform="translate(-123.416,164.909) rotate(-90)">
+   <title>Signal 1.35</title>
+   <path d="M4.24 326.98 L4.6 326.98 L8.5 326.98" class="st10" />
+  </g>
+  <g id="shape36-141" transform="translate(-78.0618,156.406) rotate(-90)">
+   <title>Signal 2.36</title>
+   <path d="M0 326.98 L3.9 326.98" class="st8" />
+  </g>
+  <g id="shape37-146" transform="translate(-44.046,156.406) rotate(-90)">
+   <title>Signal 2.37</title>
+   <path d="M0 326.98 L3.9 326.98" class="st8" />
+  </g>
+  <g id="shape38-151" transform="translate(-61.0539,164.909) rotate(-90)">
+   <title>Signal 1.38</title>
+   <path d="M4.24 326.98 L4.6 326.98 L8.5 326.98" class="st10" />
+  </g>
+  <g id="shape39-156" transform="translate(248.922,483.39) rotate(180)">
+   <title>Sheet.39</title>
+   <path d="M0 326.98 L45.35 326.98" class="st9" />
+  </g>
+  <g id="shape40-159" transform="translate(282.938,483.39) rotate(180)">
+   <title>Sheet.40</title>
+   <path d="M0 326.98 L17.01 326.98" class="st9" />
+  </g>
+  <g id="shape15-162" transform="translate(-61.0539,91.2087) rotate(-90)">
+   <title>Signal 1.15</title>
+   <path d="M4.24 326.98 L4.6 326.98 L34.02 326.98" class="st10" />
+  </g>
+  <g id="shape20-167" transform="translate(265.93,-269.791)">
+   <title>Signal 2.20</title>
+   <path d="M0 326.98 L63.43 326.98" class="st8" />
+  </g>
+  <g id="shape41-172" transform="translate(325.458,-255.618)">
+   <title>Signal 2.41</title>
+   <path d="M0 326.98 L3.9 326.98" class="st8" />
+  </g>
+  <g id="shape42-177" transform="translate(325.458,-122.39)">
+   <title>Signal 2.42</title>
+   <path d="M0 326.98 L3.9 326.98" class="st8" />
+  </g>
+  <g id="shape43-182" transform="translate(-1.52633,241.445) rotate(-90)">
+   <title>Sheet.43</title>
+   <path d="M0 326.98 L170.08 326.98" class="st9" />
+  </g>
+  <g id="shape44-185" transform="translate(214.907,-85.5394)">
+   <title>Sheet.44</title>
+   <path d="M0 326.98 L110.55 326.98" class="st9" />
+  </g>
+  <g id="shape45-188" transform="translate(67.5052,-133.728)">
+   <title>Signal 3.45</title>
+   <path d="M4.24 326.98 L4.6 326.98 L18.08 326.98" class="st5" />
+  </g>
+  <g id="shape46-195" transform="translate(5.14296,-281.13)">
+   <title>Signal 3.46</title>
+   <path d="M4.24 326.98 L4.6 326.98 L80.44 326.98" class="st5" />
+  </g>
+  <g id="shape47-202" transform="translate(-287.826,45.8543) rotate(-90) scale(-1,1)">
+   <title>Signal 2.47</title>
+   <path d="M0 326.98 L23.75 326.98" class="st8" />
+  </g>
+  <g id="shape48-207" transform="translate(366.143,221.602) rotate(90)">
+   <title>Signal 3.48</title>
+   <path d="M4.24 326.98 L4.6 326.98 L18.08 326.98" class="st5" />
+  </g>
+  <g id="shape49-214" transform="translate(-154.597,241.445) rotate(-90)">
+   <title>Signal 2.49</title>
+   <path d="M0 326.98 L15.24 326.98" class="st8" />
+  </g>
+  <g id="shape50-219" transform="translate(-140.424,249.949) rotate(-90)">
+   <title>Signal 2.50</title>
+   <path d="M0 326.98 L23.75 326.98" class="st8" />
+  </g>
+  <g id="shape51-224" transform="translate(-126.251,249.949) rotate(-90)">
+   <title>Signal 2.51</title>
+   <path d="M0 326.98 L23.75 326.98" class="st8" />
+  </g>
+  <g id="shape52-229" transform="translate(-112.078,241.445) rotate(-90)">
+   <title>Signal 2.52</title>
+   <path d="M0 326.98 L15.24 326.98" class="st8" />
+  </g>
+  <g id="shape53-234" transform="translate(95.8516,-85.5394)">
+   <title>Sheet.53</title>
+   <path d="M0 326.98 L76.54 326.98" class="st9" />
+  </g>
+  <g id="shape54-237" transform="translate(240.419,-51.5236)">
+   <title>Sheet.54</title>
+   <desc>
+    ‡ CoreSight ROM table
+   </desc>
+   <rect x="0" y="304.307" width="45.3543" height="22.6772" class="st1" />
+   <text x="1.55" y="313.25" class="st2">
+    ‡ CoreSight 
+    <tspan x="3.56" dy="9.6" class="st3">
+     ROM table
+    </tspan>
+   </text>
+  </g>
+  <g id="shape55-241" transform="translate(-63.8885,241.445) rotate(-90) scale(-1,1)">
+   <title>Signal 2.55</title>
+   <path d="M0 326.98 L6.74 326.98" class="st8" />
+  </g>
+  <g id="shape56-246" transform="translate(-12.8649,241.445) rotate(-90) scale(-1,1)">
+   <title>Signal 2.56</title>
+   <path d="M0 326.98 L29.42 326.98" class="st8" />
+  </g>
+  <g id="shape57-251" transform="translate(200.734,-77.0354)">
+   <title>Sheet.57</title>
+   <path d="M0 326.98 L17.01 326.98" class="st9" />
+  </g>
+  <g id="shape58-254" transform="translate(158.214,-77.0354)">
+   <title>Sheet.58</title>
+   <path d="M0 326.98 L28.35 326.98" class="st9" />
+  </g>
+  <g id="shape59-257" transform="translate(10.8122,-48.689)">
+   <title>Sheet.59</title>
+   <desc>
+    Serial-Wire or JTAG Debug Interface
+   </desc>
+   <rect x="0" y="292.969" width="56.6929" height="34.0157" class="st7" />
+   <text x="3.9" y="302.78" class="st2">
+    Serial-Wire or 
+    <tspan x="5.23" dy="9.6" class="st3">
+     JTAG Debug 
+    </tspan>
+    <tspan x="12.78" dy="9.6" class="st3">
+     Interface
+    </tspan>
+   </text>
+  </g>
+  <g id="shape60-262" transform="translate(76.0091,-20.3425)">
+   <title>Sheet.60</title>
+   <desc>
+    ICode AHB-Lite instruction interface
+   </desc>
+   <rect x="0" y="281.63" width="39.685" height="45.3543" class="st7" />
+   <text x="9.17" y="292.31" class="st2">
+    ICode 
+    <tspan x="3.84" dy="9.6" class="st3">
+     AHB
+    </tspan>-Lite 
+    <tspan x="1.61" dy="9.6" class="st3">
+     instruction 
+    </tspan>
+    <tspan x="4.5" dy="9.6" class="st3">
+     interface
+    </tspan>
+   </text>
+  </g>
+  <g id="shape61-268" transform="translate(135.537,-20.3425)">
+   <title>Sheet.61</title>
+   <desc>
+    DCode AHB-Lite data interface
+   </desc>
+   <rect x="0" y="281.63" width="45.3543" height="45.3543" class="st7" />
+   <text x="10.23" y="292.31" class="st2">
+    DCode 
+    <tspan x="6.67" dy="9.6" class="st3">
+     AHB
+    </tspan>-Lite 
+    <tspan x="14.89" dy="9.6" class="st3">
+     data 
+    </tspan>
+    <tspan x="7.34" dy="9.6" class="st3">
+     interface
+    </tspan>
+   </text>
+  </g>
+  <g id="shape62-274" transform="translate(195.064,-20.3425)">
+   <title>Sheet.62</title>
+   <desc>
+    System AHB-Lite system interface
+   </desc>
+   <rect x="0" y="281.63" width="45.3543" height="45.3543" class="st7" />
+   <text x="9.34" y="292.31" class="st2">
+    System 
+    <tspan x="6.67" dy="9.6" class="st3">
+     AHB
+    </tspan>-Lite 
+    <tspan x="10.01" dy="9.6" class="st3">
+     system 
+    </tspan>
+    <tspan x="7.34" dy="9.6" class="st3">
+     interface
+    </tspan>
+   </text>
+  </g>
+  <g id="shape63-280" transform="translate(285.773,-17.5079)">
+   <title>Sheet.63</title>
+   <desc>
+    PPB APB debug system interface
+   </desc>
+   <rect x="0" y="292.969" width="56.6929" height="34.0157" class="st7" />
+   <text x="11.23" y="302.78" class="st2">
+    PPB APB 
+    <tspan x="3.44" dy="9.6" class="st3">
+     debug system 
+    </tspan>
+    <tspan x="13" dy="9.6" class="st3">
+     interface
+    </tspan>
+   </text>
+  </g>
+  <g id="shape64-285" transform="translate(-109.243,249.949) rotate(-90) scale(-1,1)">
+   <title>Signal 2.64</title>
+   <path d="M0 326.98 L6.74 326.98" class="st8" />
+  </g>
+  <g id="shape65-290" transform="translate(-168.77,249.949) rotate(-90) scale(-1,1)">
+   <title>Signal 2.65</title>
+   <path d="M0 326.98 L6.74 326.98" class="st8" />
+  </g>
+  <g id="shape66-295" transform="translate(-231.133,241.445) rotate(-90) scale(-1,1)">
+   <title>Signal 2.66</title>
+   <path d="M0 326.98 L15.24 326.98" class="st8" />
+  </g>
+  <g id="shape67-300" transform="translate(7.9776,-281.13)">
+   <title>Sheet.67</title>
+   <desc>
+    Interrupts and power control
+   </desc>
+   <rect x="0" y="304.307" width="70.8661" height="22.6772" class="st7" />
+   <text x="10.75" y="313.25" class="st2">
+    Interrupts and 
+    <tspan x="11.42" dy="9.6" class="st3">
+     power control
+    </tspan>
+   </text>
+  </g>
+  <g id="shape68-304" transform="translate(10.8122,-196.091)">
+   <title>Sheet.68</title>
+   <desc>
+    Wake-up Interrupt Controller (WIC)
+   </desc>
+   <rect x="0" y="270.291" width="56.6929" height="56.6929" class="st7" />
+   <text x="12.34" y="286.64" class="st2">
+    Wake-up 
+    <tspan x="13.45" dy="9.6" class="st3">
+     Interrupt 
+    </tspan>
+    <tspan x="11.01" dy="9.6" class="st3">
+     Controller 
+    </tspan>
+    <tspan x="17.91" dy="9.6" class="st3">
+     (
+    </tspan>WIC)
+   </text>
+  </g>
+  <g id="shape69-310" transform="translate(10.8122,-105.382)">
+   <title>Sheet.69</title>
+   <desc>
+    Serial-Wire or JTAG Debug Port (SW-DP or SWJ-DP)
+   </desc>
+   <rect x="0" y="270.291" width="56.6929" height="56.6929" class="st7" />
+   <text x="8.57" y="281.84" class="st2">
+    Serial-Wire
+    <tspan x="13.46" dy="9.6" class="st3">
+     or JTAG 
+    </tspan>
+    <tspan x="8.11" dy="9.6" class="st3">
+     Debug Port
+    </tspan>
+    <tspan x="7.9" dy="9.6" class="st3"> 
+    </tspan>(SW-DP or 
+    <tspan x="11.68" dy="9.6" class="st3">
+     SWJ
+    </tspan>-DP)
+   </text>
+  </g>
+  <g id="shape70-317" transform="translate(333.962,-241.445)">
+   <title>Sheet.70</title>
+   <desc>
+    ‡
+   </desc>
+   <rect x="0" y="270.291" width="56.6929" height="56.6929" class="st1" />
+   <text x="1" y="278.49" class="st2">
+    ‡ 
+   </text>
+  </g>
+  <g id="shape71-320" transform="translate(333.962,-241.445)">
+   <title>Sheet.71</title>
+   <desc>
+    Embedded Trace Macrocell (ETM)
+   </desc>
+   <rect x="0" y="270.291" width="56.6929" height="56.6929" class="st7" />
+   <text x="9" y="286.64" class="st2">
+    Embedded 
+    <tspan x="18.12" dy="9.6" class="st3">
+     Trace 
+    </tspan>
+    <tspan x="11.23" dy="9.6" class="st3">
+     Macrocell 
+    </tspan>
+    <tspan x="17.24" dy="9.6" class="st3">
+     (
+    </tspan>ETM)
+   </text>
+  </g>
+  <g id="shape6-326" transform="translate(333.962,-105.382)">
+   <title>Sheet.6</title>
+   <desc>
+    ‡
+   </desc>
+   <rect x="0" y="270.291" width="56.6929" height="56.6929" class="st1" />
+   <text x="1" y="278.49" class="st2">
+    ‡ 
+   </text>
+  </g>
+  <g id="shape4-329" transform="translate(90.1823,-179.083)">
+   <title>Sheet.4</title>
+   <desc>
+    ‡
+   </desc>
+   <rect x="0" y="270.291" width="56.6929" height="56.6929" class="st1" />
+   <text x="1" y="278.49" class="st2">
+    ‡ 
+   </text>
+  </g>
+  <g id="shape72-332" transform="translate(90.1823,-179.083)">
+   <title>Sheet.72</title>
+   <desc>
+    Flash Patch Breakpoint (FPB)
+   </desc>
+   <rect x="0" y="270.291" width="56.6929" height="56.6929" class="st7" />
+   <text x="7.23" y="291.44" class="st2">
+    Flash Patch 
+    <tspan x="9.22" dy="9.6" class="st3">
+     Breakpoint 
+    </tspan>
+    <tspan x="17.9" dy="9.6" class="st3">
+     (
+    </tspan>FPB)
+   </text>
+  </g>
+  <g id="shape8-337" transform="translate(163.883,-179.083)">
+   <title>Sheet.8</title>
+   <desc>
+    ‡
+   </desc>
+   <rect x="0" y="270.291" width="56.6929" height="56.6929" class="st1" />
+   <text x="1" y="278.49" class="st2">
+    ‡ 
+   </text>
+  </g>
+  <g id="shape73-340" transform="translate(163.883,-179.083)">
+   <title>Sheet.73</title>
+   <desc>
+    Memory Protection Unit (MPU)
+   </desc>
+   <rect x="0" y="270.291" width="56.6929" height="56.6929" class="st7" />
+   <text x="13.9" y="291.44" class="st2">
+    Memory 
+    <tspan x="10.34" dy="9.6" class="st3">
+     Protection
+    </tspan>
+    <tspan x="8.57" dy="9.6" class="st3">
+     Unit 
+    </tspan>(MPU)
+   </text>
+  </g>
+  <g id="shape9-345" transform="translate(237.584,-179.083)">
+   <title>Sheet.9</title>
+   <desc>
+    ‡
+   </desc>
+   <rect x="0" y="270.291" width="56.6929" height="56.6929" class="st1" />
+   <text x="1" y="278.49" class="st2">
+    ‡ 
+   </text>
+  </g>
+  <g id="shape74-348" transform="translate(237.584,-179.083)">
+   <title>Sheet.74</title>
+   <desc>
+    Data Watchpoint and Trace (DWT)
+   </desc>
+   <rect x="0" y="270.291" width="56.6929" height="56.6929" class="st7" />
+   <text x="19.9" y="286.64" class="st2">
+    Data 
+    <tspan x="8.34" dy="9.6" class="st3">
+     Watchpoint 
+    </tspan>
+    <tspan x="10.34" dy="9.6" class="st3">
+     and Trace 
+    </tspan>
+    <tspan x="16.57" dy="9.6" class="st3">
+     (
+    </tspan>DWT)
+   </text>
+  </g>
+  <g id="shape10-354" transform="translate(90.1823,-105.382)">
+   <title>Sheet.10</title>
+   <desc>
+    ‡
+   </desc>
+   <rect x="0" y="270.291" width="56.6929" height="56.6929" class="st1" />
+   <text x="1" y="278.49" class="st2">
+    ‡ 
+   </text>
+  </g>
+  <g id="shape75-357" transform="translate(90.1823,-105.382)">
+   <title>Sheet.75</title>
+   <desc>
+    AHB Access Port (AHB-AP)
+   </desc>
+   <rect x="0" y="270.291" width="56.6929" height="56.6929" class="st7" />
+   <text x="20.12" y="291.44" class="st2">
+    AHB
+    <tspan x="7.01" dy="9.6" class="st3">
+     Access Port 
+    </tspan>
+    <tspan x="10.79" dy="9.6" class="st3">
+     (
+    </tspan>AHB-AP)
+   </text>
+  </g>
+  <g id="shape12-362" transform="translate(237.584,-105.382)">
+   <title>Sheet.12</title>
+   <desc>
+    ‡
+   </desc>
+   <rect x="0" y="270.291" width="68.0315" height="56.6929" class="st1" />
+   <text x="1" y="278.49" class="st2">
+    ‡ 
+   </text>
+  </g>
+  <g id="shape76-365" transform="translate(237.584,-105.382)">
+   <title>Sheet.76</title>
+   <desc>
+    Instrumentation Trace Macrocell (ITM)
+   </desc>
+   <rect x="0" y="270.291" width="68.0315" height="56.6929" class="st7" />
+   <text x="6.45" y="291.44" class="st2">
+    Instrumentation 
+    <tspan x="5.56" dy="9.6" class="st3">
+     Trace Macrocell 
+    </tspan>
+    <tspan x="24.46" dy="9.6" class="st3">
+     (
+    </tspan>ITM)
+   </text>
+  </g>
+  <g id="shape77-370" transform="translate(333.962,-105.382)">
+   <title>Sheet.77</title>
+   <desc>
+    Trace Port Interface Unit (TPIU)
+   </desc>
+   <rect x="0" y="270.291" width="56.6929" height="56.6929" class="st7" />
+   <text x="9.67" y="291.44" class="st2">
+    Trace Port 
+    <tspan x="4.56" dy="9.6" class="st3">
+     Interface Unit 
+    </tspan>
+    <tspan x="16.57" dy="9.6" class="st3">
+     (
+    </tspan>TPIU)
+   </text>
+  </g>
+  <g id="shape78-375" transform="translate(22.1508,-0.5)">
+   <title>Sheet.78</title>
+   <desc>
+    ‡ Optional component
+   </desc>
+   <rect x="0" y="315.646" width="96.378" height="11.3386" class="st7" />
+   <text x="1" y="323.71" class="st2">
+    ‡ Optional component
+   </text>
+  </g>
+  <g id="shape79-378" transform="translate(163.883,-252.783)">
+   <title>Sheet.79</title>
+   <desc>
+    Cortex-M4 core
+   </desc>
+   <rect x="0" y="270.291" width="68.0315" height="56.6929" class="st7" />
+   <text x="6.45" y="278.49" class="st2">
+    Cortex-M4 core
+   </text>
+  </g>
+  <g id="shape80-381" transform="translate(166.718,-261.287)">
+   <title>Sheet.80</title>
+   <desc>
+    ‡ Floating Point Unit (FPU)
+   </desc>
+   <rect x="0" y="304.307" width="59.5276" height="22.6772" class="st1" />
+   <text x="1.97" y="313.25" class="st2">
+    ‡ 
+    <tspan class="st3">
+     Floating Point 
+    </tspan>
+    <tspan x="10.88" dy="9.6" class="st3">
+     Unit 
+    </tspan>
+    <tspan class="st3">
+     (
+    </tspan>
+    <tspan class="st3">
+     FPU
+    </tspan>
+    <tspan class="st3">
+     ) 
+    </tspan> 
+   </text>
+  </g>
+ </g>
+</svg>
